@@ -1,7 +1,7 @@
 import React from 'react';
 import Gemstone from './Gemstone';
 
-export default function favPlacesList({ gemstones }) {
+export default function GemstonesList({ gemstones }) {
   return (
     <div className="fav-places-list">
       {gemstones.map((gemstone) => (
