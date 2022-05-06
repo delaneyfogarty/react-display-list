@@ -5,6 +5,7 @@ import FavPlacesList from './favPlacesList';
 import GemstonesList from './GemstonesList';
 import AnimalList from './AnimalList';
 import SingersList from './SingersList';
+import Spinner from './Spinner';
 // import your arrays here
 
 function App() {
@@ -45,13 +46,13 @@ function App() {
   return (
     <div className="App">
       Favorite Places
-      {!isLoading && <FavPlacesList favPlaces={favPlaces} />}
+      {isLoading ? <Spinner /> : <FavPlacesList favPlaces={favPlaces} />}
       Gemstones
-      {!isLoading && <GemstonesList gemstones={gemstones} />}
+      {isLoading ? <Spinner /> : <GemstonesList gemstones={gemstones} />}
       Favorite Animals
-      {!isLoading && <AnimalList animals={animals} />}
+      {isLoading ? <Spinner /> : <AnimalList animals={animals} />}
       Favorite Singers
-      {!isLoading && <SingersList singers={singers} />}
+      {isLoading ? <Spinner /> : <SingersList singers={singers} />}
     </div>
   );
 }

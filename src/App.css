@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 .App-logo {
@@ -9,7 +11,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 0.6s linear;
   }
 }
 
@@ -39,7 +41,7 @@
 
 .singer {
   margin: 20px;
-  border: solid purple;
+  border: solid 1rem rgb(254, 40, 229);
   padding: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -61,7 +63,7 @@ img {
 
 .animal {
   margin: 20px;
-  border: solid purple;
+  border: solid 1rem rgb(254, 40, 229);
   padding: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -74,14 +76,14 @@ img {
 
 .place {
   margin: 20px;
-  border: solid purple;
+  border: solid 1rem rgb(254, 40, 229);
   padding: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .gemstone {
   margin: 20px;
-  border: solid purple;
+  border: solid 1rem rgb(254, 40, 229);
   padding: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
