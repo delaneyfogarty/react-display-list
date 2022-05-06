@@ -3,7 +3,7 @@ import Singer from './Singer';
 
 export default function SingersList({ singers }) {
   return (
-    <div className="singers-list">
+    <div className="singer-list">
       {singers.map((singer) => (
         <Singer key={singer.Name + singer.Age} singer={singer} />
       ))}

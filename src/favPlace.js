@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function FavPlace({ favPlace }) {
   return (
-    <div>
-      <p>{favPlace.Country}</p>
-      <p>{favPlace.Good_Food}</p>
-      <p>{favPlace.Favorite_Memory}</p>
+    <div className="place">
       <p>{favPlace.Location}</p>
+      <p>Country: {favPlace.Country}</p>
+      <p>Favorite Food: {favPlace.Good_Food}</p>
+      <p>Favorite Memory: {favPlace.Favorite_Memory}</p>
     </div>
   );
 }

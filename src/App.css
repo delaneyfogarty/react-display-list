@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+.singer {
+  margin: 20px;
+  border: solid purple;
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.singer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img {
+  width: 150px;
+}
+
+.animal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.animal {
+  margin: 20px;
+  border: solid purple;
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fav-places-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.place {
+  margin: 20px;
+  border: solid purple;
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gemstone {
+  margin: 20px;
+  border: solid purple;
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gemstone-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

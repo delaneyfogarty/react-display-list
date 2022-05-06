@@ -2,11 +2,17 @@ import React from 'react';
 
 export default function Gemstone({ gemstone }) {
   return (
-    <div>
+    <div className="gemstone">
       <p>{gemstone.Name}</p>
-      <p>{gemstone.Color}</p>
-      <p>{gemstone.Variety}</p>
-      <p>{gemstone.Properties}</p>
+      <p>Color: {gemstone.Color}</p>
+      <p>Variety: {gemstone.Variety}</p>
+      <ul>
+        {' '}
+        Properties
+        {gemstone.Properties.map((property) => (
+          <li key={property}>{property}</li>
+        ))}
+      </ul>
     </div>
   );
 }

@@ -2,11 +2,13 @@ import React from 'react';
 
 export default function Animal({ animal }) {
   return (
-    <div>
+    <div className="animal">
       <p>{animal.Name}</p>
-      <p>{animal.Type}</p>
-      <p>{animal.Lifespan}</p>
+      <p>Type: {animal.Type}</p>
+      <p>Lifespan: {animal.Lifespan}</p>
       <ul>
+        {' '}
+        Habitats
         {animal.Habitat.map((x) => (
           <li key={x}>{x}</li>
         ))}
