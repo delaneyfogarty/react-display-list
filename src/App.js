@@ -1,12 +1,14 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import { getFavPlaces } from './services/fetch-utils';
+import { getFavPlaces, getGemstones } from './services/fetch-utils';
 import FavPlacesList from './favPlacesList';
+import GemstonesList from './GemstonesList';
 // import your arrays here
 
 function App() {
   const [favPlaces, setFavPlaces] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [gemstones, setGemstones] = useState([]);
 
   useEffect(async () => {
     setIsLoading(true);
@@ -17,15 +19,17 @@ function App() {
 
   useEffect(async () => {
     setIsLoading(true);
-    const favPlacesResponse = await getFavPlaces();
+    const gemstonesResponse = await getGemstones();
     setIsLoading(false);
-    setFavPlaces(favPlacesResponse);
+    setGemstones(gemstonesResponse);
   }, []);
 
   return (
     <div className="App">
       Favorite Places
       {!isLoading && <FavPlacesList favPlaces={favPlaces} />}
+      Gemstones
+      {!isLoading && <GemstonesList gemstones={gemstones} />}
     </div>
   );
 }
