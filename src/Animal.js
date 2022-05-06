@@ -6,7 +6,11 @@ export default function Animal({ animal }) {
       <p>{animal.Name}</p>
       <p>{animal.Type}</p>
       <p>{animal.Lifespan}</p>
-      <p>{animal.Habitat}</p>
+      <ul>
+        {animal.Habitat.map((x) => (
+          <li key={x}>{x}</li>
+        ))}
+      </ul>
     </div>
   );
 }
