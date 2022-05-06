@@ -7,7 +7,11 @@ export default function Singer({ singer }) {
       <p>{singer.Age}</p>
       <img src={singer.Image}></img>
       <p>{singer.First_Album}</p>
-      <p>{singer.Favorite_Songs}</p>
+      <ul>
+        {singer.Favorite_Songs.map((song) => (
+          <li key={song}>{song}</li>
+        ))}
+      </ul>
     </div>
   );
 }
