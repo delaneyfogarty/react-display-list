@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 .App-logo {
@@ -9,7 +11,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 0.6s linear;
   }
 }
 
@@ -35,4 +37,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.singer {
+  margin: 20px;
+  border: solid 1rem rgb(254, 40, 229);
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.singer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img {
+  width: 150px;
+}
+
+.animal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.animal {
+  margin: 20px;
+  border: solid 1rem rgb(254, 40, 229);
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fav-places-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.place {
+  margin: 20px;
+  border: solid 1rem rgb(254, 40, 229);
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gemstone {
+  margin: 20px;
+  border: solid 1rem rgb(254, 40, 229);
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gemstone-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
